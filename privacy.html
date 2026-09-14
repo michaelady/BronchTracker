@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2F6F6A">
+  <title>Privacy · BronchTracker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #F7F3EC;
+      color: #1B2A28;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    a { color: #2F6F6A; }
+    .warn {
+      background: #FFF4EC;
+      border: 1px solid #C45C4A55;
+      border-radius: 12px;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="./">← BronchTracker</a></p>
+    <h1>Privacy policy</h1>
+    <p>Effective date: 14 September 2026</p>
+    <p>
+      BronchTracker is a parent-facing breathing diary for children (bronchitis flares,
+      asthma exacerbations, wheeze, cough). It is <strong>not a medical device</strong>,
+      not emergency care, and not a product that sells children’s health data.
+    </p>
+    <div class="warn">
+      If a child has severe breathing distress (cannot speak, blue lips or nails,
+      ribs pulling in, or you are worried), call emergency services (911 in the US)
+      immediately. This website cannot help in an emergency.
+    </div>
+    <h2>What is stored</h2>
+    <p>
+      Child profiles (name, optional birth year, diagnosis tags), episodes,
+      daily check-ins (symptoms, rescue puffs, optional peak flow), medications,
+      action-plan notes you type, and reminder preferences.
+    </p>
+    <ul>
+      <li><strong>Guest / local mode:</strong> data stays in this browser or on the Android device (SharedPreferences). Nothing is uploaded.</li>
+      <li><strong>Google Sign-In:</strong> only if the project owner configured Firebase. Then the diary is stored under your Firebase Auth user in Cloud Firestore so you can sync devices.</li>
+    </ul>
+    <h2>What we do not do</h2>
+    <ul>
+      <li>No advertising in the app or on this GitHub Pages site.</li>
+      <li>No sale of personal information or health information.</li>
+      <li>No data brokers, no third-party marketing SDKs in this MVP.</li>
+      <li>No smart-inhaler or Bluetooth hardware collection.</li>
+    </ul>
+    <h2>Children’s data</h2>
+    <p>
+      Profiles describe children but the account is for a parent or caregiver.
+      Do not enter more than you need (first name or nickname is enough).
+      This project is intended as a family diary, not a school or clinic EHR.
+    </p>
+    <h2>Delete</h2>
+    <p>
+      In the app: Kids → Delete all diary data, or delete one child.
+      That clears local storage and, when signed in, the Firestore document for your user.
+      You can also clear site data in the browser or uninstall the Android app.
+    </p>
+    <h2>GitHub Pages</h2>
+    <p>
+      The static Flutter web build is hosted at
+      <a href="https://michaelady.github.io/BronchTracker/">https://michaelady.github.io/BronchTracker/</a>.
+      GitHub’s hosting logs are governed by GitHub’s own privacy statement.
+      Guest-mode diary entries are not sent to GitHub.
+    </p>
+    <h2>Contact</h2>
+    <p>
+      Open an issue on the
+      <a href="https://github.com/michaelady/BronchTracker">BronchTracker repository</a>
+      for privacy questions about this open-source app.
+    </p>
+  </main>
+</body>
+</html>
