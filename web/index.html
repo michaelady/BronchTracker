@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="BronchTracker — a parent diary for kids’ bronchitis flares and asthma exacerbations. Not a medical device.">
+  <meta name="theme-color" content="#2F6F6A">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BronchTracker">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>BronchTracker</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #F7F3EC;
+      color: #1B2A28;
+      font-family: system-ui, sans-serif;
+    }
+    .boot {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .boot h1 { font-size: 22px; margin: 0; }
+    .boot p { color: #5E6F6C; max-width: 28rem; text-align: center; padding: 0 16px; }
+  </style>
+  <!-- When using Google Sign-In on web, add your OAuth client:
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  -->
+</head>
+<body>
+  <div class="boot">
+    <h1>BronchTracker</h1>
+    <p>Loading a calm parent log. Not a medical device — call emergency services for severe breathing distress.</p>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
